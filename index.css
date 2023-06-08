@@ -121,7 +121,9 @@ header{
   outline: none;
   background: transparent;
   margin-top: 10px;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-weight: unset;
+  font-size: 18px;
 }
 
 .login {
@@ -129,7 +131,9 @@ header{
   outline: none;
   background: transparent;
   margin-top: 10px;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-weight: unset;
+  font-size: 18px;
 }
 .content {
   display: flex;
@@ -715,7 +719,7 @@ color : white;
   align-items: center;
 }
 
-.footer * {
+.footer  {
   font-size: 18px;
 }
 
@@ -1228,6 +1232,7 @@ width : 120%
   width: 60%;
   margin: 20px auto;
 }
+
 .footer-logo img{
   
   margin-left: 252px;
@@ -1594,6 +1599,7 @@ align-items: center;
   margin-top: 2px;
   left: 11%;
 }
+
 .location li {
   list-style: none;
   margin-top: 1px;
@@ -1983,7 +1989,9 @@ align-items: center;
   margin-left: 2px;
 }
 
-
+.footer * {
+  font-size: 12px;
+}
 .footer-nav li {
   margin: 12px 10px;
   color: white;
@@ -1992,7 +2000,8 @@ align-items: center;
 .location li {
   list-style: none;
   margin-top: 1px;
-  font-size: 19px;
+    font-size: 12px;
+
 }
 .login {
   border: none;
@@ -2000,7 +2009,7 @@ align-items: center;
   background: transparent;
   margin-top: 10px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
 }
 .signup {
   border: none;
@@ -2008,7 +2017,10 @@ align-items: center;
   background: transparent;
   margin-top: 10px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
+}
+.signup2 {
+  width: 70px;
 }
 .social-icons {
   display: flex;
@@ -2022,7 +2034,7 @@ align-items: center;
   color: white;
   position: absolute;
   right: 47%;
-  margin-top: 93px;
+  margin-top: 86px;
   margin-bottom: 1.5em;
   font-weight: unset;
   
