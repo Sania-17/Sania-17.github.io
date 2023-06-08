@@ -1,68 +1,126 @@
-.contactus{
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 123px;
-}
-body{
-  
+.contactus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 123px;
 }
 
-  
+body {
+  /* Add your body styles here */
+}
+
+.form {
+  margin: 0 auto;
+  width: 50vw;
+  height: 40vw;
+  margin-top: 24px;
+  z-index: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.input-wrapper i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.input-txt,
+textarea {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+#email2{
+  border : none;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+#email{
+  /* border: none; */
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="email"]::placeholder {
+  font-size: 14px;
+}
+
+.submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 1200px) {
   .form {
-    margin: 0 auto;
-    width: 50vw;
-    height: 40vw;
-    margin-top: 24px;
-    z-index: 1;
+    width: 70vw;
+    height: auto;
+    margin-bottom: 123px;
   }
-  
-   
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 22px; }
-  
-  .input-wrapper {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  
-  .input-wrapper i {
-    margin-right: 10px;
-    font-size: 18px;
-  }
-  
- .input-txt,
-  input[type="email"],
-  textarea {
-     border: none; 
-    width: 100%;
-    padding: 10px;
-    font-size: 20px;
-    outline: none;
-    cursor: pointer;
-  }
-
-  input[type="email"]::placeholder {
-  font-size: 14px; /* Adjust the font size to your desired value */
 }
-  .submit {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
+
+@media only screen and (max-width: 840px) {
+  .form {
+    width: 56vw;
+    height: auto;
+    margin-bottom: 123px;
   }
-  
-  .submit:hover {
-    background-color: #45a049;
+  .input-txt, input[type="email"], textarea::placeholder {
+    font-size: 12px;
+}
+
+}
+
+@media only screen and (max-width: 540px) {
+  .form {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 123px;
   }
-  
+  .input-txt, input[type="email"], textarea::placeholder {
+    font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 276px) {
+  .form {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 123px;
+  }
+  .input-txt, input[type="email"], textarea::placeholder {
+    font-size: 12px;
+}
+}
