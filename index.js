@@ -1,41 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
   const hamburgerMenu = document.querySelector('.hamburger');
   const navItems = document.querySelector('.navbar ul');
-  const logo = document.querySelector('.logo img');
   const navItemsList = document.querySelectorAll('.navbar ul li');
   const btn = document.querySelectorAll('.navbar .btn');
 
   hamburgerMenu.addEventListener('click', () => {
-    if (navItems.style.display === 'flex') {
-      navItems.style.display = 'none';
-      btn.forEach((button) => {
-        button.style.display = 'none';
-      });
-      hamburgerMenu.classList.remove('drop');
-    } else {
-      navItems.style.display = 'flex';
-      btn.forEach((button) => {
-        button.style.display = 'block';
-      });
-      hamburgerMenu.classList.add('drop');
-    }
+    navItems.classList.toggle('open'); // Toggle the "open" class on the menu
+
+    // Toggle the visibility of buttons
+    btn.forEach((button) => {
+      button.classList.toggle('visible');
+    });
+
+    hamburgerMenu.classList.toggle('drop'); // Toggle the "drop" class on the hamburger icon
   });
 });
 
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  const hamburgerMenu = document.querySelector('.hamburger');
-  const navbar = document.querySelector('.navbar');
-  const navItems = document.querySelector('.navbar ul');
-  const logo = document.querySelector('.logo img');
-  const navItemsList = document.querySelectorAll('.navbar ul li');
-  const btn = document.querySelectorAll('.navbar .btn');
-
-  hamburgerMenu.addEventListener('click', () => {
-    navbar.classList.toggle('open');
-  });
-});
 
 
 
