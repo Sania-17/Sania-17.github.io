@@ -1776,7 +1776,14 @@ align-items: center;
   font-weight: lighter;
 }
 
+.navbar ul li:hover{
+  background-color:rgb(202, 202, 247);
+  font-size: unset;
+  transition: all 0.3s ease-out;
 
+  
+
+}
 
 .searchbar {
   background-image: url('https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?w=996&t=st=1686033201~exp=1686033801~hmac=cb98282a64814bf7fa45505a61ccb4e40e4d12033a3f6758225cd279d3a563a2');
@@ -1986,7 +1993,7 @@ align-items: center;
   position: absolute;
   width: 278px;
   margin-top: 33px;
-  margin-left: 0px;
+  margin-left: 2px;
 }
 
 .footer * {
